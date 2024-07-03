@@ -7,10 +7,14 @@ public class DemoOfFileHandling {
 	
 	public static void main(String[] args) {
 		
-		File file = new File("abc.txt");
+		File file = new File("C:/Users/shreeee/Desktop/Myfilehandling/abc.txt");
+		
+		File file1 = new File("C:/Users/shreeee/Desktop/Myfilehandling/abc");
 		
 		
 			try {
+				file1.mkdir();
+				
 				if(!file.exists())
 				{
 				file.createNewFile();
